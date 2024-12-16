@@ -78,7 +78,7 @@ class geom_polygon_3d(geom_polygon):
                 df['x'].values,
                 df['y'].values,
                 df['z'].values,
-                facecolors=fill if any(fill) else 'none',
+                color=fill if any(fill) else 'none',
                 edgecolors=df['color'] if any(df['color']) else 'none',
                 linestyles=df['linetype'],
                 linewidths=df['size'],
